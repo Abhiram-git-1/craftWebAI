@@ -244,18 +244,6 @@ Package a generated website with its source files and required project configura
 ### Phase 10 — Public website publishing
 Build a deployment workflow that validates a project, publishes it to a hosted URL, and provides basic deployment status and management.
 
-### Phase 11 — Production readiness
-Harden authentication and APIs, add rate limits and usage controls, improve logging and monitoring, and run generated builds in disposable isolated environments with resource and network restrictions.
-
-### Phase 12 — Custom domains and publishing management
-Allow users to connect domains, manage published sites, and view deployment history and status.
-
-### Phase 13 — Templates and reusable sections
-Offer starter templates and reusable page sections to speed up website creation and provide more consistent starting points.
-
-### Phase 14 — Advanced AI design and editing
-Improve design control, multi-step editing, responsive refinement, and more precise AI-assisted changes across a website.
-
 ## Security notes
 
 - Never commit `server/.env`, API keys, database credentials, or JWT secrets.
