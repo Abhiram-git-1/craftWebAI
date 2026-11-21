@@ -1,15 +1,15 @@
-# carftWebAI
+# craftWebAIWebAI
 
 **Build websites with AI. Edit the code. Preview the result.**
 
-carftWebAI is an AI-powered website builder that turns natural-language prompts into React website projects. It combines AI-assisted planning and code generation with project management, a code editor, and a live preview.
+craftWebAIWebAI is an AI-powered website builder that turns natural-language prompts into React website projects. It combines AI-assisted planning and code generation with project management, a code editor, and a live preview.
 
 > **Current milestone: MVP v0.1.0** — the core prompt-to-website workflow is implemented and has been tested with the example projects documented below. This is a development MVP, not yet a production-ready public hosting platform.
 
 ### HomePage
-![carftWebAI HomePage](docs/images/homepage.png)
+![craftWebAIWebAI HomePage](docs/images/homepage.png)
 ### Dashboard
-![carftWebAI Dashboard](docs/images/dashboard.png)
+![craftWebAIWebAI Dashboard](docs/images/dashboard.png)
 ## Features
 
 - **Authentication:** registration, sign-in, sign-out, password hashing, and JWT sessions in HttpOnly cookies.
@@ -51,7 +51,7 @@ The following are observed test runs from development. They demonstrate two diff
 | Full-stack developer portfolio with Home, About, Skills, Projects, Experience, and Contact sections, premium dark styling, animations, and responsive layout | **18 files** | Clear live preview. Planning: **45,000 ms (estimated)**; Generation: **450,000 ms (estimated)**; Total: **495,000 ms (estimated — 8 min 15 sec)**. |
 | Minimal one-page “Brew & Bean” coffee shop with a navbar, hero, three menu items, and footer | **5 files** | Clear live preview. Planning: **29,641.379 ms**; Generation: **156,869.677 ms**; Total: **186,511.056 ms**. |               |
 
-How to record carftWebAI generation time
+How to record craftWebAIWebAI generation time
 For future benchmark runs, capture timestamps at the beginning and successful end of the generation request:
 
 const startedAt = Date.now();
@@ -99,7 +99,7 @@ The current model is configured on the **server**, not in the browser. Set `OPEN
 The repository is organized into separate frontend and backend applications:
 
 ```text
-carftWebAI/
+craftWebAIWebAI/
 ├── client/                 # React + Vite application
 ├── server/                 # Express API and AI generation services
 │   ├── src/
@@ -150,7 +150,7 @@ Added generated-content normalization, manifest/file checks, validation diagnost
 
 ```bash
 git clone <YOUR_GITHUB_REPOSITORY_URL>
-cd carftWebAI
+cd craftWebAIWebAI
 ```
 
 ### 2. Configure the backend
@@ -166,7 +166,7 @@ Copy `.env.example` to `.env`, then set the values for your environment:
 PORT=5000
 NODE_ENV=development
 CLIENT_URL=http://localhost:5173
-MONGODB_URI=mongodb://127.0.0.1:27017/carftwebai
+MONGODB_URI=mongodb://127.0.0.1:27017/craftWebAIwebai
 JWT_SECRET=replace_with_a_long_random_secret
 OPENROUTER_API_KEY=your_openrouter_api_key
 OPENROUTER_MODEL=recursive/flint-v1.0:free
@@ -225,7 +225,7 @@ Authentication route details and request schemas should be checked in the curren
 - **Generation time:** varies by model, provider load, prompt complexity, and file count. No representative timing benchmark has been published yet.
 - **Preview compatibility:** the browser preview may not support every npm package, Vite plugin, alias, dynamic import, asset type, or advanced build feature.
 - **Preview security:** the current preview is a development feature, not a production-grade isolation boundary for arbitrary hostile code. Do not expose it as a secure public execution service.
-- **No public hosting yet:** generated sites cannot yet be published to managed public URLs through carftWebAI.
+- **No public hosting yet:** generated sites cannot yet be published to managed public URLs through craftWebAIWebAI.
 - **Not production-audited:** rate limiting, abuse prevention, deployment hardening, monitoring, and stronger execution isolation still need work.
 
 ## Roadmap

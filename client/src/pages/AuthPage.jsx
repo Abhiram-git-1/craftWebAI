@@ -38,7 +38,7 @@ export default function AuthPage({ mode, onBack, onAuthenticated }) {
         <div className="auth-symbol">
           <Sparkles size={22} />
         </div>
-        <p className="auth-kicker">carftWebAI account</p>
+        <p className="auth-kicker">craftWebAIWebAI account</p>
         <h1>{isRegister ? "Create your account." : "Welcome back."}</h1>
         <p className="auth-description">
           {isRegister

@@ -35,7 +35,7 @@ const features = [
 
 function getInitialTheme() {
   try {
-    return localStorage.getItem("carftwebai-theme") || "dark";
+    return localStorage.getItem("craftWebAIwebai-theme") || "dark";
   } catch {
     return "dark";
   }
@@ -54,7 +54,7 @@ function AppContent() {
       .querySelector('meta[name="theme-color"]')
       ?.setAttribute("content", dark ? "#000000" : "#FFFFFF");
     try {
-      localStorage.setItem("carftwebai-theme", theme);
+      localStorage.setItem("craftWebAIwebai-theme", theme);
     } catch {
       /* Storage may be unavailable. */
     }
@@ -129,9 +129,9 @@ function AppContent() {
   return (
     <main className="app">
       <header className="topbar">
-        <a className="brand" href="/" aria-label="carftWebAI home">
+        <a className="brand" href="/" aria-label="craftWebAIWebAI home">
           <span className="brand-mark">c</span>
-          <span>carftWebAI</span>
+          <span>craftWebAIWebAI</span>
         </a>
         <div className="topbar-actions">
           <button
@@ -187,7 +187,7 @@ function AppContent() {
         ))}
       </section>
       <footer className="footer">
-        <span>carftWebAI</span>
+        <span>craftWebAIWebAI</span>
         <span>Built for ideas worth making.</span>
       </footer>
     </main>

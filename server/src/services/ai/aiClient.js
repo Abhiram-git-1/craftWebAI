@@ -42,7 +42,7 @@
 //           Authorization: `Bearer ${apiKey}`,
 //           'Content-Type': 'application/json',
 //           'HTTP-Referer': process.env.OPENROUTER_SITE_URL || 'http://localhost:5173',
-//           'X-OpenRouter-Title': process.env.OPENROUTER_APP_NAME || 'carftWebAI',
+//           'X-OpenRouter-Title': process.env.OPENROUTER_APP_NAME || 'craftWebAIWebAI',
 //         },
 //         body: JSON.stringify(body),
 //         signal: AbortSignal.timeout(TIMEOUT_MS),
@@ -162,7 +162,7 @@ async function requestCompletion({
           "Content-Type": "application/json",
           "HTTP-Referer":
             process.env.OPENROUTER_SITE_URL || "http://localhost:5173",
-          "X-OpenRouter-Title": process.env.OPENROUTER_APP_NAME || "carftWebAI",
+          "X-OpenRouter-Title": process.env.OPENROUTER_APP_NAME || "craftWebAIWebAI",
         },
         body: JSON.stringify(body),
         signal: AbortSignal.timeout(TIMEOUT_MS),

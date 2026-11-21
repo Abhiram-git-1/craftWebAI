@@ -23,7 +23,7 @@ if (process.env.NODE_ENV !== "production") {
 app.get("/api/health", (_req, res) => {
   res.json({
     success: true,
-    app: "carftWebAI",
+    app: "craftWebAIWebAI",
     status: "healthy",
   });
 });

@@ -8,7 +8,7 @@ async function startServer() {
   try {
     await connectDB();
     app.listen(PORT, () => {
-      console.log(`carftWebAI API running at http://localhost:${PORT}`);
+      console.log(`craftWebAIWebAI API running at http://localhost:${PORT}`);
     });
   } catch (error) {
     console.error("Failed to start server:", error.message);

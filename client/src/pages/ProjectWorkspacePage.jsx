@@ -250,7 +250,7 @@ export default function ProjectWorkspacePage({ project, onBack }) {
           <p className="auth-kicker">AI WEBSITE BUILDER</p>
           <h1>What are we building?</h1>
           <p>
-            Describe your website. carftWebAI prepares a plan, generates source
+            Describe your website. craftWebAIWebAI prepares a plan, generates source
             files and lets you inspect a live preview.
           </p>
         </div>

@@ -119,7 +119,7 @@ export default function DashboardPage({ user, onLogout, onOpenProject }) {
       <header className="dashboard-topbar">
         <a className="brand" href="/">
           <span className="brand-mark">c</span>
-          <span>carftWebAI</span>
+          <span>craftWebAIWebAI</span>
         </a>
         <div className="account-area">
           <span className="account-name">{user.name}</span>

@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 
-const COOKIE_NAME = "carftwebai_token";
+const COOKIE_NAME = "craftWebAIwebai_token";
 
 export function createToken(userId) {
   const secret = process.env.JWT_SECRET;
